@@ -1,0 +1,25 @@
+export default{
+    name:"about",
+    type:"document",
+    title:"About",
+    fields:[
+        {
+            name:"skills",
+            type:"array",
+            of:[{type:"string"}],
+            title:"Skills",
+        },
+        {
+            name:"education",
+            type:"array",
+            of:[{type:"string"}],
+            title:"Education"
+        },
+        {
+            name:"courses",
+            type:"array",
+            of:[{type:"string"}],
+            title:"Courses"
+        },
+    ]
+}
