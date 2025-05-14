@@ -2,10 +2,8 @@
 
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation"
-import { Meteors } from "@/components/magicui/meteors";
 import { ShimmerButton } from "@/components/magicui/shimmer-button";
 import { ShinyButton } from "@/components/magicui/shiny-button";
-
 export default function HeroSection(){
   return (
     <section className="lg:py-16">
@@ -21,9 +19,9 @@ export default function HeroSection(){
               sequence={[
                 "Alyan Ali",
                 1200,
-                "UI/UX Desinger",
+                "Web Developer",
                 1300,
-                "Web developer",
+                "AI developer",
               ]}
               wrapper="span"
               speed={50}
@@ -55,7 +53,6 @@ export default function HeroSection(){
           className="col-span-4  mt-4 lg:mt-0"
         >
         </div>
-       <Meteors/>
       </div>
     </section>
   );

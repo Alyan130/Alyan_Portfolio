@@ -2,7 +2,6 @@ import React from "react";
 import { IoCodeSlash } from "react-icons/io5";
 import { FiEye } from "react-icons/fi";
 import Link from "next/link";
-import { BorderBeam } from "@/components/magicui/border-beam";
 
 
 
@@ -41,13 +40,6 @@ const ProjectCard = ({project}:{project:Project}) => {
         <h5 className="text-xl font-semibold mb-2">{project.Title}</h5>
         <p className="text-[#ADB7BE]">{project.Description}</p>
       </div>
-      <BorderBeam duration={8} size={100} />
-      <BorderBeam
-        duration={8}
-        delay={3}
-        size={400}
-        className="from-transparent via-blue-500 to-transparent"
-      />
     </div>
   );
 };

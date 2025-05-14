@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
     const resend = new Resend(resendApiKey);
 
     const { data, error } = await resend.emails.send({
-      from:'Acme <onboarding@resend.dev>',
+      from:'Client <onboarding@resend.dev>',
       to: process.env.RECIPIENT_EMAIL || "",
       subject: `Portfolio Contact: ${subject}`,
       text: `From: ${email}\nSubject: ${subject}\n\nMessage:\n${message}`,
