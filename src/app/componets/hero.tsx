@@ -4,6 +4,7 @@ import Link from "next/link";
 import { TypeAnimation } from "react-type-animation"
 import { ShimmerButton } from "@/components/magicui/shimmer-button";
 import { ShinyButton } from "@/components/magicui/shiny-button";
+
 export default function HeroSection(){
   return (
     <section className="lg:py-16">
