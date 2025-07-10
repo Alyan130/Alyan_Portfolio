@@ -91,7 +91,7 @@ export const AboutSection = () => {
   return (
     <section className="text-white py-10 md:py-0" id="about">
       <div className="md:grid flex md:grid-cols-2 flex-col gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <div className="w-full order-2 md:order-1">
+        <div className="w-full order-2 md:order-1 hidden md:flex">
         <OrbitingCirclesDemo/>
         </div>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full order-1 md:order-2">
