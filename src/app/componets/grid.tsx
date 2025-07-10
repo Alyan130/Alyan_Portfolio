@@ -16,32 +16,32 @@ export function FeatureCard({ feature, className, ...props }: FeatureCardProps) 
   return (
     <div
       className={cn(
-        "relative overflow-hidden p-6 bg-black/50 hover:bg-black/70 transition-all duration-300 group",
+        "relative overflow-hidden p-6 bg-black/50 hover:bg-black/60 transition-all duration-300 group backdrop-blur-sm border border-blue-500/20 hover:border-blue-400/30",
         className,
       )}
       {...props}
     >
       <div className="pointer-events-none absolute top-0 left-1/2 -mt-2 -ml-20 h-full w-full [mask-image:linear-gradient(white,transparent)]">
-        <div className="from-white/5 to-white/1 absolute inset-0 bg-gradient-to-r [mask-image:radial-gradient(farthest-side_at_top,white,transparent)] opacity-100">
+        <div className="from-blue-400/10 to-blue-600/5 absolute inset-0 bg-gradient-to-r [mask-image:radial-gradient(farthest-side_at_top,white,transparent)] opacity-100">
           <GridPattern
             width={20}
             height={20}
             x="-12"
             y="4"
             squares={p}
-            className="fill-white/5 stroke-white/20 absolute inset-0 h-full w-full mix-blend-overlay group-hover:stroke-white/30 transition-all duration-300"
+            className="fill-blue-400/10 stroke-blue-200/40 absolute inset-0 h-full w-full mix-blend-overlay group-hover:stroke-blue-300/50 group-hover:fill-blue-400/15 transition-all duration-300"
           />
         </div>
       </div>
       <feature.icon
-        className="text-white/80 group-hover:text-white size-6 transition-colors duration-300"
+        className="text-blue-300/90 group-hover:text-blue-200 size-6 transition-colors duration-300 drop-shadow-sm"
         strokeWidth={1.5}
         aria-hidden
       />
-      <h3 className="mt-10 text-sm md:text-base font-semibold text-white group-hover:text-white/90 transition-colors duration-300">
+      <h3 className="mt-10 text-sm md:text-base font-semibold text-white group-hover:text-blue-50 transition-colors duration-300">
         {feature.title}
       </h3>
-      <p className="text-gray-400 group-hover:text-gray-300 relative z-20 mt-2 text-xs font-light leading-relaxed transition-colors duration-300">
+      <p className="text-gray-300 group-hover:text-gray-200 relative z-20 mt-2 text-xs font-light leading-relaxed transition-colors duration-300">
         {feature.description}
       </p>
     </div>
@@ -77,9 +77,9 @@ function GridPattern({
 }
 
 function genRandomPattern(length?: number): number[][] {
-  length = length ?? 6
+  length = length ?? 5
   return Array.from({ length }, () => [
-    Math.floor(Math.random() * 4) + 7, 
-    Math.floor(Math.random() * 6) + 1, 
+    Math.floor(Math.random() * 4) + 7, // random x between 7 and 10
+    Math.floor(Math.random() * 6) + 1, // random y between 1 and 6
   ])
 }
