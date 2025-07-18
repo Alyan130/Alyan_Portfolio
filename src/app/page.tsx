@@ -1,11 +1,11 @@
-import HeroSection from "./componets/hero";
-import Header from "./componets/header";
-import { AboutSection } from "./componets/about";
-import ProjectsSection from "./componets/projectSection";
-import ContactForm from "./componets/contact";
-import Footer from "./componets/footer";
+import HeroSection from "./components/hero";
+import Header from "./components/header";
+import { AboutSection } from  "./components/about";
+import ProjectsSection from "./components/projectSection";
+import ContactForm from "./components/contact";
+import Footer from "./components/footer";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
-import SkillsGrid from "./componets/skillCard";
+import SkillsGrid from "./components/skillCard";
 
 
 export default function Home() {

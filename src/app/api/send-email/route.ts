@@ -4,7 +4,6 @@ import { Resend } from 'resend';
 export async function POST(request: NextRequest) {
   try {
     const { email, message ,subject } = await request.json();
-
     if (!email || !subject || !message) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }

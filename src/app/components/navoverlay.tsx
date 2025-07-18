@@ -1,4 +1,4 @@
-import Navlink from "@/app/componets/navlink"
+import Navlink from "./navlink"
 
 type Link = {
     path: string;

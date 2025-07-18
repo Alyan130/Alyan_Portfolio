@@ -63,15 +63,15 @@ export default function SkillsGrid() {
         </AnimatedContainer>
       </div>
 
-      {/* Background gradient overlay with blue tints */}
+  
       <div className="fixed inset-0 -z-10 bg-gradient-to-br from-black via-gray-900 to-blue-950/20" />
 
-      {/* Subtle blue grid background */}
+    
       <div className="fixed inset-0 -z-10 opacity-10">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.3)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.3)_1px,transparent_1px)] bg-[size:50px_50px]" />
       </div>
 
-      {/* Additional blue glow effects */}
+  
       <div className="fixed inset-0 -z-10">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl" />

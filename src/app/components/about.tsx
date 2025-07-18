@@ -97,7 +97,10 @@ export const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full order-1 md:order-2">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg text-[#ADB7BE]">
-          A passionate frontend developer with a strong focus on building modern, responsive, and dynamic web applications. With expertise in Next.js, TypeScript, Tailwind CSS, and the Shadcn UI library, I specialize in creating intuitive and visually appealing user interfaces that deliver seamless user experiences. I am dedicated to continuous learning and staying updated with the latest frontend technologies to create the best possible user experiences. 
+         Computer Science Student at Dawood University of Engineering and Technology. Results-driven Developer skilled in building scalable web applications using React.js, Next.js, and
+ FastAPI/Nodejs for backend development. Experienced in managing SQL/NoSQL databases, integrating
+ secure REST APIs, and delivering AI-powered features. Focused on clean code, responsive design, and
+ seamless cross-device user experiences
           </p>
           <div className="flex flex-row justify-start mt-8 ">
             {TAB_DATA.map((tabData) => (
